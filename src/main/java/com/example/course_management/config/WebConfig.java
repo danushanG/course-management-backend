@@ -14,10 +14,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("course-management-frontend-production.up.railway.app") // frontend Railway URL
+                        .allowedOrigins("https://course-management-frontend-production.up.railway.app") // FULL frontend Railway URL with https://
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
     }
 }
-
